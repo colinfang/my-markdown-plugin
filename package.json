@@ -1,0 +1,28 @@
+{
+    "name": "my-markdown-plugin",
+    "displayName": "My Markdown Plugin",
+    "description": "Additional grammar scopes in Markdown",
+    "version": "0.0.1",
+    "publisher": "colinfang",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "grammars": [
+            {
+                "scopeName": "markdown.my_plugin",
+                "path": "./syntaxes/plugin.json",
+                "injectTo": [
+                    "text.html.markdown"
+                ]
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/colinfang/my-markdown-plugin.git"
+    }
+}

@@ -1,0 +1,171 @@
+{
+    "injectionSelector": "L:markup.list.unnumbered.markdown meta.paragraph.markdown - inline-dollars",
+    "patterns": [
+        {
+            "include": "#reference"
+        },
+        {
+            "include": "#tip"
+        },
+        {
+            "include": "#workaround"
+        },
+        {
+            "include": "#todo"
+        },
+        {
+            "include": "#fixed"
+        },
+        {
+            "include": "#issue"
+        },
+        {
+            "include": "#index"
+        },
+        {
+            "include": "#feature"
+        },
+        {
+            "include": "#convention"
+        }
+    ],
+    "repository": {
+        "reference": {
+            "match": "(\\{)(.+?)(\\})",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "meta.reference.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.reference.plugin"
+        },
+        "tip": {
+            "match": "(?<=- )(\\[)(Tip)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.tip.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.tip.plugin"
+        },
+        "workaround": {
+            "match": "(?<=- )(\\[)(Workaround)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.workaround.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.workaround.plugin"
+        },
+        "todo": {
+            "match": "(?<=- )(\\[)(TODO)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.todo.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.todo.plugin"
+        },
+        "fixed": {
+            "match": "(?<=- )(\\[)(Fixed)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.fixed.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.fixed.plugin"
+        },
+        "issue": {
+            "match": "(?<=- )(\\[)(Issue)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.issue.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.issue.plugin"
+        },
+        "feature": {
+            "match": "(?<=- )(\\[)(Feature request)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.feature.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.feature.plugin"
+        },
+        "index": {
+            "match": "(?<=- )(\\[)(Index)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.index.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.index.plugin"
+        },
+        "convention": {
+            "match": "(?<=- )(\\[)(Convention)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.convention.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.convention.plugin"
+        }
+    },
+    "scopeName": "markdown.my_plugin"
+}
+
