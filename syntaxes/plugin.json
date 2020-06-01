@@ -27,6 +27,15 @@
         },
         {
             "include": "#convention"
+        },
+        {
+            "include": "#example"
+        },
+        {
+            "include": "#def"
+        },
+        {
+            "include": "#prop"
         }
     ],
     "repository": {
@@ -164,6 +173,51 @@
                 }
             },
             "name": "markup.tag.convention.plugin"
+        },
+        "example": {
+            "match": "(?<=- )(\\[)(Example)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.example.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.example.plugin"
+        },
+        "def": {
+            "match": "(?<=- )(\\[)(Def)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.def.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.def.plugin"
+        },
+        "prop": {
+            "match": "(?<=- )(\\[)(Prop)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.prop.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.prop.plugin"
         }
     },
     "scopeName": "markdown.my_plugin"
