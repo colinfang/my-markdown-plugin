@@ -1,5 +1,5 @@
 {
-    "injectionSelector": "L:markup.list.unnumbered.markdown meta.paragraph.markdown - inline-dollars",
+    "injectionSelector": "L:markup.list.unnumbered.markdown meta.paragraph.markdown - markup.math.inline.markdown",
     "patterns": [
         {
             "include": "#reference"
