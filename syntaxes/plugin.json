@@ -39,6 +39,9 @@
         },
         {
             "include": "#default"
+        },
+        {
+            "include": "#assume"
         }
     ],
     "repository": {
@@ -236,6 +239,21 @@
                 }
             },
             "name": "markup.tag.default.plugin"
+        },
+        "assume": {
+            "match": "(?<=- )(\\[)(Assume)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.assume.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.assume.plugin"
         }
     },
     "scopeName": "markdown.my_plugin"
