@@ -13,8 +13,15 @@
     "contributes": {
         "grammars": [
             {
-                "scopeName": "markdown.my_plugin",
+                "scopeName": "list.markdown.my_plugin",
                 "path": "./syntaxes/plugin.json",
+                "injectTo": [
+                    "text.html.markdown"
+                ]
+            },
+            {
+                "scopeName": "header.markdown.my_plugin",
+                "path": "./syntaxes/plugin2.json",
                 "injectTo": [
                     "text.html.markdown"
                 ]

@@ -1,0 +1,45 @@
+{
+    "injectionSelector": "L:markup.heading.markdown",
+    "patterns": [
+        {
+            "include": "#convention"
+        },
+        {
+            "include": "#example"
+        }
+    ],
+    "repository": {
+        "convention": {
+            "match": "(?<=# )(\\[)(Convention)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.convention.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.convention.plugin"
+        },
+        "example": {
+            "match": "(?<=# )(\\[)(Example)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.example.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.example.plugin"
+        }
+    },
+    "scopeName": "header.markdown.my_plugin"
+}
+

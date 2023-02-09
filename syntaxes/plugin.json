@@ -41,6 +41,18 @@
             "include": "#default"
         },
         {
+            "include": "#intuition"
+        },
+        {
+            "include": "#motivation"
+        },
+        {
+            "include": "#drawback"
+        },
+        {
+            "include": "#remark"
+        },
+        {
             "include": "#assume"
         }
     ],
@@ -166,7 +178,7 @@
             "name": "markup.tag.index.plugin"
         },
         "convention": {
-            "match": "(?<=- )(\\[)(Convention)(\\])(?= )",
+            "match": "(?<=- )(\\[)(Convention)(\\])",
             "captures": {
                 "1": {
                     "name": "punctuation.definition.plugin"
@@ -181,7 +193,7 @@
             "name": "markup.tag.convention.plugin"
         },
         "example": {
-            "match": "(?<=- )(\\[)(Example)(\\])(?= )",
+            "match": "(?<=- )(\\[)(Example)(\\])",
             "captures": {
                 "1": {
                     "name": "punctuation.definition.plugin"
@@ -240,8 +252,68 @@
             },
             "name": "markup.tag.default.plugin"
         },
+        "intuition": {
+            "match": "(?<=- )(\\[)(Intuition)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.intuition.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.intuition.plugin"
+        },
+        "motivation": {
+            "match": "(?<=- )(\\[)(Motivation)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.motivation.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.motivation.plugin"
+        },
+        "remark": {
+            "match": "(?<=- )(\\[)(Remark)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.remark.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.remark.plugin"
+        },
+        "drawback": {
+            "match": "(?<=- )(\\[)(Drawback)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.drawback.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.drawback.plugin"
+        },
         "assume": {
-            "match": "(?<=- )(\\[)(Assume)(\\])(?= )",
+            "match": "(?<=- )(\\[)(Assume)(\\])",
             "captures": {
                 "1": {
                     "name": "punctuation.definition.plugin"
@@ -256,6 +328,6 @@
             "name": "markup.tag.assume.plugin"
         }
     },
-    "scopeName": "markdown.my_plugin"
+    "scopeName": "list.markdown.my_plugin"
 }
 
