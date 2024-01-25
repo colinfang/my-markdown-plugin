@@ -54,6 +54,15 @@
         },
         {
             "include": "#assume"
+        },
+        {
+            "include": "#notation"
+        },
+        {
+            "include": "#benefit"
+        },
+        {
+            "include": "#abstract"
         }
     ],
     "repository": {
@@ -163,7 +172,7 @@
             "name": "markup.tag.feature.plugin"
         },
         "index": {
-            "match": "(?<=- )(\\[)(Index)(\\])(?= )",
+            "match": "(?<=[-\\]] )(\\[)(Index)(\\])(?= )",
             "captures": {
                 "1": {
                     "name": "punctuation.definition.plugin"
@@ -268,7 +277,7 @@
             "name": "markup.tag.intuition.plugin"
         },
         "motivation": {
-            "match": "(?<=- )(\\[)(Motivation)(\\])(?= )",
+            "match": "(?<=- )(\\[)(Motivation)(\\])",
             "captures": {
                 "1": {
                     "name": "punctuation.definition.plugin"
@@ -326,6 +335,51 @@
                 }
             },
             "name": "markup.tag.assume.plugin"
+        },
+        "notation": {
+            "match": "(?<=- )(\\[)(Notation)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.notation.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.notation.plugin"
+        },
+        "benefit": {
+            "match": "(?<=- )(\\[)(Benefit)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.benefit.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.benefit.plugin"
+        },
+        "abstract": {
+            "match": "(?<=- )(\\[)(Abstract)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.abstract.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.abstract.plugin"
         }
     },
     "scopeName": "list.markdown.my_plugin"

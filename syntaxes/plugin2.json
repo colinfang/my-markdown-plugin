@@ -6,6 +6,9 @@
         },
         {
             "include": "#example"
+        },
+        {
+            "include": "#motivation"
         }
     ],
     "repository": {
@@ -38,6 +41,21 @@
                 }
             },
             "name": "markup.tag.example.plugin"
+        },
+        "motivation": {
+            "match": "(?<=# )(\\[)(Motivation)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.motivation.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.motivation.plugin"
         }
     },
     "scopeName": "header.markdown.my_plugin"
