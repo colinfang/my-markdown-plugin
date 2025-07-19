@@ -63,6 +63,12 @@
         },
         {
             "include": "#abstract"
+        },
+        {
+            "include": "#seen"
+        },
+        {
+            "include": "#performance"
         }
     ],
     "repository": {
@@ -380,8 +386,37 @@
                 }
             },
             "name": "markup.tag.abstract.plugin"
+        },
+        "seen": {
+            "match": "(?<=- )(\\[)(Seen as)(\\])(?= )",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.seen.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.seen.plugin"
+        },
+        "performance": {
+            "match": "(?<=- )(\\[)(Performance)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.performance.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.performance.plugin"
         }
     },
     "scopeName": "list.markdown.my_plugin"
 }
-

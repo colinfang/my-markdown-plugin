@@ -9,6 +9,9 @@
         },
         {
             "include": "#motivation"
+        },
+            {
+            "include": "#issue"
         }
     ],
     "repository": {
@@ -56,8 +59,22 @@
                 }
             },
             "name": "markup.tag.motivation.plugin"
+        },
+        "issue": {
+            "match": "(?<=# )(\\[)(Issue)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.plugin"
+                },
+                "2": {
+                    "name": "value.tag.issue.plugin"
+                },
+                "3": {
+                    "name": "punctuation.definition.plugin"
+                }
+            },
+            "name": "markup.tag.issue.plugin"
         }
     },
     "scopeName": "header.markdown.my_plugin"
 }
-
