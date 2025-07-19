@@ -403,7 +403,7 @@
             "name": "markup.tag.seen.plugin"
         },
         "performance": {
-            "match": "(?<=- )(\\[)(Performance)(\\])",
+            "match": "(?<=[-\\]] )(\\[)(Performance)(\\])",
             "captures": {
                 "1": {
                     "name": "punctuation.definition.plugin"
